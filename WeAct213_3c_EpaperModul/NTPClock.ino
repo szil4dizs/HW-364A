@@ -7,10 +7,7 @@
 #include <ESP8266WiFi.h>
 
 // ePaper kijelző csatlakozások (ESP8266)
-#define CS  15
-#define DC  4
-#define RES 16
-#define BUSY 5
+// ESP8266 CS(SS)=15,SCL(SCK)=14,SDA(MOSI)=13,BUSY=16,RES(RST)=5,DC=4
 
 // 2.13" fekete-fehér kijelző
 GxEPD2_3C<GxEPD2_213_Z98c, GxEPD2_213_Z98c::HEIGHT> display(GxEPD2_213_Z98c(/*CS=5*/ 15, /*DC=*/ 4, /*RES=*/ 5, /*BUSY=*/ 16));
